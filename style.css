@@ -1,0 +1,126 @@
+body{
+    background-color: #493548;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.column{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.column h1{
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+.column i{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.task{
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.task:hover{
+    cursor: grab;
+    background-color: #cfcece;
+}
+
+#table{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.addBtn, .saveBtn{
+    width: 100%;
+    text-align: center;
+    background-color: #B594B6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.column h2{
+    font-size: 17px;
+    display: inline-block;
+}
+
+.addBtn:hover{
+    background-color: #4b414a;
+    color: white;
+}
+
+#popupBackground, #popupBackground2{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup, #popup2{
+    background-color: white;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#popup h1{
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+}
+#popup label{
+    display: block;
+    font-size: small;
+}
+
+.inputContainer{
+    margin: auto;
+    width: min-content;
+}
+
+.inputContainer textarea, .inputContainer input{
+    width: 200px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    margin: 5px 0px;
+}
+
+.inputContainer textarea{
+    resize: vertical;
+    width: 200px;
+}
+
+.saveBtn{
+    width: 100px;
+    margin: auto;
+}
+
+#closePopup, #closePopup2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 12px;
+    padding: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="table">
+        <div class="column">
+            <h1>Todo</h1>
+            <div class="addBtn">
+                <h2>Add task</h2>
+                <i class="fa-regular fa-plus"></i>
+            </div>
+        </div>
+        <div class="column">
+            <h1>In progress</h1>
+            <div class="addBtn">
+                <h2>Add task</h2>
+                <i class="fa-regular fa-plus"></i>
+            </div>
+        </div>
+        <div class="column">
+            <h1>Done</h1>
+            <div class="addBtn">
+                <h2>Add task</h2>
+                <i class="fa-regular fa-plus"></i>
+            </div>
+        </div>
+    </div>
+    <div id="popupBackground">
+        <div id="popup">
+            <img id="closePopup" src="close.png">
+             <h1>Task Description</h1>
+            <form id="newTaskForm">
+                <div class="inputContainer">
+                    <label for="taskName">Task Name</label>
+                    <input id="taskName" type="text">
+                </div>
+                <div class="inputContainer">
+                    <label for="taskDesc">Task description</label>
+                    <textarea id="taskDescription"></textarea>
+                </div>
+                <div class="saveBtn" id="saveBtn">
+                    <h2>Add Task</h2>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="popupBackground2">
+        <div id="popup2">
+            <img id="closePopup2" src="close.png">
+             <h1 id="showTaskName"></h1>
+             <p id="showTaskDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
